@@ -1,0 +1,57 @@
+<div style="padding:0px;">
+    <!-- <input
+        routerLink = "/home/new-post"
+        type="button" class="btn btn-info" value="Create"> -->
+    <a
+        class="create"
+        style="color: white; font-size: 16px; text-decoration: none"
+        routerLink = "/home/new-post">
+        <img src="../../assets/images/create.png" width="32" />
+        <span style="vertical-align: bottom;">Create a post</span>
+    </a>
+</div>
+
+<div class="row">
+    <div style="padding:10px; width: 1000px;">
+        <ngb-accordion #acc="ngbAccordion" [activeIds]="activeIds">
+            <ngb-panel 
+                id="panel-{{ post.postId }}"
+                *ngFor = "let post of posts">
+                <ng-template ngbPanelHeader let-opened="opened">
+                    <span class="float-left" style="color: teal; padding-top: 8px;">{{post.postTitle}}</span>
+                    <button ngbPanelToggle class="btn btn-link float-right upDown" (click)="toggleExpanded(post)">
+                        <img style="width: 20px; padding: 3px;" 
+                            [src]="post.isExpanded ? '../../assets/images/up.png' : '../../assets/images/down.png'"
+                            [title]="post.isExpanded ? 'Collapse' : 'Expand'" />
+                    </button>
+                    <button
+                        [routerLink] = "['/home/post-detail',  post.postId]" 
+                        class="btn btn-link float-right upDown">
+                        <img style="width: 20px; padding: 3px;" src="../../assets/images/more.png" title="More" />
+                    </button>
+                </ng-template>
+                <ng-template ngbPanelContent>
+                    <span style="text-align: justify;">
+                        {{ post.postContent }}
+                    </span>
+                </ng-template>
+            </ngb-panel>
+        </ngb-accordion>
+    </div>
+    <div>
+        <div *ngFor = "let ad of advs"
+            style="padding-top: 10px;">
+                <div class="card" style="width: 335px;">
+                    <div class="card-body">
+                        <a href="#" style="text-decoration: none;">
+                            <h6 class="card-title"> {{ ad.adTitle}}</h6>
+                        </a>
+                        <div>
+                            <span class="card-text">{{ ad.adContent }} </span>
+                            {{ ad.adLink }}
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

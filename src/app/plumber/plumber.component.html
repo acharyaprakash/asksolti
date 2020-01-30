@@ -1,0 +1,35 @@
+<div id="custom-search-input" style="padding-top: 5px; padding-bottom: 10px;">
+    <div class="input-group col-md-12 height50">
+        <input type="text" class="  search-query form-control height50" placeholder="Search Plumber" />
+        <span class="input-group-btn height50">
+            <button class="btn btn-info height50 width50" type="button" (click)="searchPlumbers()">
+                <img src="../../assets/images/search.png" width="25px" height="25px">
+            </button>
+        </span>
+    </div>
+</div>
+<div class="row row-cols-1 row-cols-md-3">
+    <div
+        *ngFor = "let plumber of plumbers" 
+        class="col mb-4">
+        <div class="card">
+            <img [src]="plumber.Image" class="card-img-top" style="height: 400px; width:400px; padding: 25px;" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"> {{ plumber.Name }} </h5>
+                <p class="card-text">
+                    {{ plumber.Description }}
+                </p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">
+                    <ngb-rating style="color: #343a40; padding-top: 12px;" max="5" [(rate)]="plumber.Rating"></ngb-rating>
+                </small>
+                <button
+                    [routerLink] = "['/plumber/',  plumber.Id]" 
+                    class="btn btn-link float-right upDown">
+                <img style="width: 20px; padding: 3px;" src="../../assets/images/more.png" title="More" />
+            </button>
+            </div>
+        </div>
+    </div>
+</div>

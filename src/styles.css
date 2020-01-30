@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
+
+body{
+    padding-top: 80px;
+    background-color:rgb(165, 159, 159);
+    text-align: justify;
+}
+
+.homeContainer {
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.create :hover{
+    color: rgba(23, 98, 148, 0.884);
+}
+
+.ck-editor__editable_inline {
+    min-height: 400px;
+}
+
+.upDown :hover{
+    padding: 0px !important;
+}
+
+.height50{
+    height: 50px;
+}
+
+.width50{
+    width: 50px;
+}
