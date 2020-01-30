@@ -6,7 +6,7 @@
         class="create"
         style="color: white; font-size: 16px; text-decoration: none"
         routerLink = "/home/new-post">
-        <img src="../../assets/images/create.png" width="32" />
+        <img src="././assets/images/create.png" width="32" />
         <span style="vertical-align: bottom;">Create a post</span>
     </a>
 </div>
@@ -21,13 +21,13 @@
                     <span class="float-left" style="color: teal; padding-top: 8px;">{{post.postTitle}}</span>
                     <button ngbPanelToggle class="btn btn-link float-right upDown" (click)="toggleExpanded(post)">
                         <img style="width: 20px; padding: 3px;" 
-                            [src]="post.isExpanded ? '../../assets/images/up.png' : '../../assets/images/down.png'"
+                            [src]="post.isExpanded ? '././assets/images/up.png' : '././assets/images/down.png'"
                             [title]="post.isExpanded ? 'Collapse' : 'Expand'" />
                     </button>
                     <button
                         [routerLink] = "['/home/post-detail',  post.postId]" 
                         class="btn btn-link float-right upDown">
-                        <img style="width: 20px; padding: 3px;" src="../../assets/images/more.png" title="More" />
+                        <img style="width: 20px; padding: 3px;" src="././assets/images/more.png" title="More" />
                     </button>
                 </ng-template>
                 <ng-template ngbPanelContent>
