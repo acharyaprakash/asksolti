@@ -9,7 +9,7 @@ export class ServiceDetailComponent implements OnInit {
   
   serviceType:string;
   services = [
-    {Id: 1, ServiceType:"Doctor", Name: "Dr. Prakash Acharya", Description: "Cardiologist", Image:"../../assets/images/doctor.png", Rating: 5}
+    {Id: 1, ServiceType:"Doctor", Name: "Dr. Prakash Acharya", Description: "Cardiologist", Image:"././assets/images/doctor.png", Rating: 5}
   ];
 
   requests=[
