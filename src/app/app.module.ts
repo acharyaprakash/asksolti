@@ -18,6 +18,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { NewPostComponent } from './new-post/new-post.component';
 import { FormsModule } from '@angular/forms';
+import { EventComponent } from './event/event.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FormsModule } from '@angular/forms';
     NotFoundComponent,
     NavbarComponent,
     LoginComponent,
-    NewPostComponent
+    NewPostComponent,
+    EventComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +52,7 @@ import { FormsModule } from '@angular/forms';
       {path: 'plumber', component: PlumberComponent},
       {path: 'plumber/:id', component: ServiceDetailComponent},
       {path: 'change-password', component: ChangePasswordComponent},
+      {path: 'event', component: EventComponent},
       {path: '**', component: NotFoundComponent}
     ])
   ],

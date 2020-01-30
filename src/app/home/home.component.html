@@ -12,13 +12,14 @@
 </div>
 
 <div class="row">
-    <div style="padding:10px; width: 1000px;">
+    <div style="padding:5px; width: 1000px;">
         <ngb-accordion #acc="ngbAccordion" [activeIds]="activeIds">
             <ngb-panel 
                 id="panel-{{ post.postId }}"
                 *ngFor = "let post of posts">
                 <ng-template ngbPanelHeader let-opened="opened">
-                    <span class="float-left" style="color: teal; padding-top: 8px;">{{post.postTitle}}</span>
+                    <img style="float: left; width: 48px; height: 48px; padding: 2px; border-radius: 80%;" src="././assets/images/profile.jpg"/>
+                    <span class="float-left" style="vertical-align: bottom; color: teal; padding-left: 5px; padding-top: 8px;">{{post.postTitle}}</span>
                     <button ngbPanelToggle class="btn btn-link float-right upDown" (click)="toggleExpanded(post)">
                         <img style="width: 20px; padding: 3px;" 
                             [src]="post.isExpanded ? '././assets/images/up.png' : '././assets/images/down.png'"
