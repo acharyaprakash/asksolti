@@ -2,8 +2,12 @@
       <a
         routerLink="/" 
         class="navbar-brand">
-          <img src="./assets/images/ask.png" width="64" />
-          <span style="color:whitesmoke; vertical-align: bottom; font-weight: bold; font-size: 45px; font-family: cursive;">Ask Solti</span>      
+          <img src="./assets/images/ask.png" style="height: 48px;" />
+          <span 
+            style="color:whitesmoke; vertical-align: bottom; 
+                  font-weight: bold; font-size: 30px; font-family: cursive;">
+              Ask Solti
+            </span>      
       </a>
       <button (click)="toggleNavbar()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -13,7 +17,7 @@
         style="padding-left: 40%;"
         class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul
-          style="padding-top: 15px;" 
+          style="padding-top: 0px;" 
           class="navbar-nav mr-auto">
           <li
             *ngFor = "let item of menu"
