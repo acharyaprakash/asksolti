@@ -13,7 +13,7 @@
     </div>
 </div>
 <div class="row">
-    <div style="width: 100%; height: 500px; overflow: auto;">
+    <div style="width: 100%; height: 100vh; overflow: auto;">
         <ngb-accordion #acc="ngbAccordion" [activeIds]="activeIds">
             <ngb-panel 
                 id="panel-{{ post.postId }}"
@@ -28,7 +28,7 @@
                         class="float-left" 
                         style="
                             color: rgba(23, 98, 148, 0.884); 
-                            vertical-align: bottom; 
+                            vertical-align: bottom; text-align: left;
                             padding-left: 5px; padding-top: 12px;">
                         {{post.postTitle}}
                     </span>
@@ -54,7 +54,7 @@
         </ngb-accordion>
     </div>
 </div>
-<div class="row" style="width: 100%; padding-top: 5px; padding-left: 10px;">
+<div class="row" style="width: 100%; padding-top: 5px; padding-left: 10px; padding-bottom:10px;">
     <ngb-carousel #carousel interval="5000" style="width: 25%;" [showNavigationArrows]="false" [showNavigationIndicators]="false">
     <ng-template ngbSlide *ngFor="let img of images; index as i">
         <div class="picsum-img-wrapper">
