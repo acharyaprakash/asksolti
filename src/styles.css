@@ -21,7 +21,7 @@ body{
 }
 
 .ck-editor__editable_inline {
-    min-height: 400px;
+    min-height: 65vh;
 }
 
 .upDown :hover{
@@ -34,5 +34,12 @@ body{
 
 .width50{
     width: 50px;
+}
+
+.profileBorder{
+    border-radius: 20%;                         
+    border-style: solid; 
+    border-width: thin; 
+    border-color: rgba(23, 98, 148, 0.884);
 }
 

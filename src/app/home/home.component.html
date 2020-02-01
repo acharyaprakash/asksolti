@@ -19,10 +19,9 @@
                 id="panel-{{ post.postId }}"
                 *ngFor = "let post of posts">
                 <ng-template ngbPanelHeader let-opened="opened">
-                    <img 
-                        style="float: left; width: 48px; height: 48px;
-                            border-radius: 20%; 
-                            border-style: solid; border-width: thin; border-color: rgba(23, 98, 148, 0.884);" 
+                    <img
+                        class="profileBorder" 
+                        style="float: left; width: 48px; height: 48px;" 
                         src="././assets/images/profile.jpg"/>
                     <span 
                         class="float-left" 

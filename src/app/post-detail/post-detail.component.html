@@ -28,12 +28,11 @@
         <button class="btn btn-link" (click)="open(content)">
             <img src="././assets/images/comment.png" width="24" height="24">
         </button>
-
-        <div style="float: right; padding-right: 10px; padding-top: 10px;">
-            <ngb-rating style="color: #343a40;" [(rate)]="currentRate"></ngb-rating>
-            <!-- <hr>
-            <pre>Rate: <b>{{currentRate}}</b></pre> -->
-        </div>
+<!-- 
+    <div style="float: right; padding-right: 10px; padding-top: 10px;">
+        <ngb-rating style="color: #343a40;" [(rate)]="currentRate"></ngb-rating>
+    </div> 
+-->
     </div>
 
 <div
@@ -41,7 +40,10 @@
     style="padding-left: 20px; padding-right: 20px;" 
     class="my-3 p-3 bg-white rounded shadow-sm"
     class="media text-muted pt-3">
-    <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+    <img class="profileBorder" width="48" height="48" src="././assets/images/profile.jpg" />
+    <p 
+        style="padding-left: 10px;"
+        class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
         <strong class="d-block text-gray-dark">@Post Owner</strong>
         {{ item.postContent }}
     </p>
@@ -51,8 +53,10 @@
         style="padding-left: 20px;" 
         class="my-3 p-3 bg-white rounded shadow-sm"
         class="media text-muted pt-3">
-        <img style="padding: 5px; border-radius: 100%;" width="48" height="48" src="././assets/images/profile.jpg" />
-        <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <img class="profileBorder" width="48" height="48" src="././assets/images/profile.jpg" />
+        <p 
+            style="padding-left: 10px; padding-right: 10px;"
+            class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
             <strong class="d-block text-gray-dark">@{{comment.username}}</strong>
             {{ comment.commentContent }}
         </p>

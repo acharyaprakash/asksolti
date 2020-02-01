@@ -11,13 +11,13 @@ export class PostDetailComponent implements OnInit {
   post = [
     { 
       postId: 1, 
-      postTitle: "Job is required for Prakash Acharya. The quick brown fox jumps over the lazy dogs.", 
-      postContent: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. ",
+      postTitle: "Job is required. The quick brown fox jumps over the lazy dogs.", 
+      postContent:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       comments: [
         { commentId: 1, username: 'prakash', commentContent: "Comment 1"},
         { commentId: 1, username: 'prakash', commentContent: "Comment 1"},
         { commentId: 1, username: 'prakash', commentContent: "Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid"},
-        { commentId: 4, username: 'pacharya', commentContent: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry"}
+        { commentId: 4, username: 'pacharya', commentContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
       ]
     
     }
