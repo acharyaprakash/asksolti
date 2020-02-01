@@ -1,3 +1,15 @@
+<div id="custom-search-input" style="padding-top: 5px; padding-bottom: 10px;">
+        <div class="input-group col-md-12 height50">
+            <input 
+                [(ngModel)]="searchText" 
+                type="text" class="search-query form-control height50" placeholder="Search Event" />
+            <span class="input-group-btn height50">
+                <button class="btn btn-info height50 width50" type="button" (click)="searchEvents()">
+                    <img src="././assets/images/search.png" width="25px" height="25px">
+                </button>
+            </span>
+        </div>
+    </div>
 <div class="row row-cols-1 row-cols-md-3">
     <div
         *ngFor = "let event of events" 
