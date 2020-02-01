@@ -25,7 +25,7 @@ export class EventComponent implements OnInit {
   ngOnInit() {
   }
 
-  searchDoctors(){
+  searchEvents(){
     let result=[];
 
     result = this.events.filter(doctor => doctor.Name.includes(this.searchText));
